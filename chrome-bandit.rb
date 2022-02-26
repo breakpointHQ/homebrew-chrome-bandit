@@ -7,8 +7,8 @@ class ChromeBandit < Formula
   
     def install
       bin.install "chrome-bandit"
-      prefix.install Dir["commands"]
-      prefix.install Dir["resources"]
-      prefix.install Dir["utils"]
+      prefix.install Dir["commands/*"]
+      prefix.install Dir["resources/*"]
+      prefix.install Dir["utils/*"]
     end
 end
